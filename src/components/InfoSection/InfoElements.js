@@ -30,7 +30,7 @@ export const InfoContentOne = styled.div`
   z-index: 1;
   height: 450px;
   padding: 120px 60px 0px 60px;
-  
+
   @media screen and (max-width: 1024px) {
     padding: 0;
     padding-top: 100px;
@@ -69,6 +69,7 @@ export const InfoContentCredit = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   @media screen and (max-width: 1024px) {
     padding-top: 15px;
@@ -124,10 +125,10 @@ export const CreditP = styled.p`
 `;
 
 export const InfoContentMan = styled.div`
-    background-image: url(${grandfhater});
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+  background-image: url(${grandfhater});
+  background-size: cover;
+  background-position: center;
+  width: 100%;
   @media screen and (max-width: 1024px) {
   }
 
@@ -137,7 +138,8 @@ export const InfoContentMan = styled.div`
 `;
 
 export const InfoContentThree = styled.div`
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   background-image: linear-gradient(
@@ -149,7 +151,7 @@ export const InfoContentThree = styled.div`
   background-position: center;
   color: white;
   height: 550px;
-  padding: 100px 50px 0px 50px;
+  padding: 0px 50px;
 
   @media screen and (max-width: 1024px) {
     height: 350px;
@@ -231,10 +233,10 @@ export const InfoContentWomen = styled.div`
 `;
 
 export const InfoContentPlanes = styled.div`
-  padding-top: 30px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   @media screen and (max-width: 1024px) {
     padding-top: 15px;
@@ -261,20 +263,20 @@ export const PlanesH1 = styled.h1`
   font-weight: bold;
   color: #e13f4c;
   font-size: 82.96px;
-  
+
   @media screen and (max-width: 1024px) {
     font-size: 48px;
   }
-  
+
   @media screen and (max-width: 420px) {
     font-size: 40px;
     color: #fff;
   }
-  `;
+`;
 
 export const PlanesP = styled.p`
   color: #e13f4c;
-  font-size: 27px;  
+  font-size: 27px;
   padding: 0px 60px;
 
   @media screen and (max-width: 1024px) {
@@ -296,7 +298,7 @@ export const InfoContentFive = styled.div`
       rgba(130, 51, 232, 0.8),
       rgba(130, 51, 232, 0.8)
     ),
-  url(${EquipmentImage});
+    url(${EquipmentImage});
   background-size: cover;
   background-position: center;
   color: white;
@@ -314,13 +316,14 @@ export const InfoContentFive = styled.div`
 `;
 
 export const InfoContentEquipment = styled.div`
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 100px 50px 0px 50px; 
+  padding: 100px 50px 0px 50px;
 
   @media screen and (max-width: 1024px) {
     padding: 0px;
@@ -357,7 +360,7 @@ export const EquipmentH1 = styled.h1`
 `;
 
 export const EquipmentP = styled.p`
-  padding: 20px 60px 0px 60px; 
+  padding: 20px 60px 0px 60px;
   font-size: 27px;
 
   @media screen and (max-width: 1024px) {

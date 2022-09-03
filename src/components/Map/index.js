@@ -45,11 +45,8 @@ const Map = () => {
     <>
       <SectionMap>
         <MapInfo>
-          <MapH1>Tenemos presencia en muchas partes del país</MapH1>
-          <MapP>
-            Da Click en tu departamento para ver la ubicación de nuestras
-            tiendas
-          </MapP>
+          <MapH1>Estamos ubicados en estos lugares:</MapH1>
+          <MapP>¡Clic a tu departamento, ahí nos verás</MapP>
         </MapInfo>
         <ContainerMaps>
           <ContainerMap>

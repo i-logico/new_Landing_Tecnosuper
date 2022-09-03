@@ -3,7 +3,7 @@ import {
   MdOutlineCreditCardOff,
   MdOutlineReceiptLong,
   MdOutlineRequestPage,
-  MdOutlineAod
+  MdOutlineAod,
 } from "react-icons/md";
 import {
   InfoContainer,
@@ -28,26 +28,24 @@ import {
   CardIconContainer,
   ReceiptIconContainer,
   RequestIconContainer,
-  AodIconContainer
+  AodIconContainer,
 } from "./InfoElements";
 
 const InfoSection = () => {
   return (
     <InfoContainer>
       <InfoContentOne>
-        Conoce todos los beneficios que tenemos para ti
+        Estos beneficios son especialmente para ti:
       </InfoContentOne>
       <InfoContentTwo>
         <InfoContentCredit>
           <CardIconContainer>
             <MdOutlineCreditCardOff />
           </CardIconContainer>
-          <CreditH1>Crédito para reportados</CreditH1>
+          <CreditH1>¿Reportado? Te damos crédito</CreditH1>
           <CreditP>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sit
-            itaque dicta laborum porro? Possimus cumque repellat, perspiciatis
-            porro voluptates hic voluptate deserunt voluptatibus ducimus
-            accusantium reiciendis, est tempore cupiditate!
+            Somos amigos, te damos el crédito sin problema y sin codeudores,
+            solo necesitamos tu CC. ¡y es todo!
           </CreditP>
         </InfoContentCredit>
         <InfoContentMan />
@@ -56,40 +54,33 @@ const InfoSection = () => {
         <ReceiptIconContainer>
           <MdOutlineReceiptLong />
         </ReceiptIconContainer>
-        <ThreeH1>Cuota Inicial del 30%</ThreeH1>
+        <ThreeH1>30% de cuota inicial</ThreeH1>
         <ThreeP>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur a
-          nisi repellendus quis quae illo, asperiores voluptates harum dolores.
-          Itaque sed suscipit neque nam! Cumque eaque doloremque itaque
-          doloribus totam.
+          Tu bolsillo te va agradecer no estar vacío, además de tener un nuevo
+          acompañante
         </ThreeP>
       </InfoContentThree>
       <InfoContentFour>
         <InfoContentWomen />
         <InfoContentPlanes>
           <RequestIconContainer>
-            <MdOutlineRequestPage/>
+            <MdOutlineRequestPage />
           </RequestIconContainer>
-          <PlanesH1>Diversos planes de pago</PlanesH1>
+          <PlanesH1>Variedad de pago, variedad de productos</PlanesH1>
           <PlanesP>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-            ratione nemo alias unde voluptates voluptatibus facilis
-            reprehenderit vitae, earum rerum, beatae eveniet excepturi! Deserunt
-            molestiae temporibus mollitia commodi nesciunt animi?
+            No solo nos quedamos con una opción, nos encanta ofrecer variedad,
+            esto es variedad
           </PlanesP>
         </InfoContentPlanes>
       </InfoContentFour>
       <InfoContentFive>
         <InfoContentEquipment>
           <AodIconContainer>
-            <MdOutlineAod/>
+            <MdOutlineAod />
           </AodIconContainer>
-          <EquipmentH1>Equipos Originales e Importados</EquipmentH1>
+          <EquipmentH1>100% original e importado</EquipmentH1>
           <EquipmentP>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-            ratione nemo alias unde voluptates voluptatibus facilis
-            reprehenderit vitae, earum rerum, beatae eveniet excepturi! Deserunt
-            molestiae temporibus mollitia commodi nesciunt animi?
+            Eres un 100, somos un 100. No eres menos, aquí eres más
           </EquipmentP>
         </InfoContentEquipment>
       </InfoContentFive>

@@ -28,19 +28,18 @@ export const ModalWrapper = styled.div`
   border-radius: 20px;
   justify-content: center;
   text-align: center;
-
+  
   @media screen and (max-width: 1024px) {
     width: 588px;
     height: 1052px;
     flex-direction: column;
   }
-
+  
   @media screen and (max-width: 420px) {
     width: 350px;
     height: 627px;
+    overflow-y: scroll;
   }
-
-  
 `;
 
 export const ModalContent = styled.div`
@@ -68,7 +67,7 @@ export const ModalContent = styled.div`
   }
 
   p {
-    margin-bottom: 1rem;
+    margin-top: 30px;
     font-size: 14px;
     margin-top: 5 px;
   }

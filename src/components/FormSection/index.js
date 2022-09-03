@@ -141,7 +141,7 @@ const Formulario = () => {
               </CampsLayout>
 
               <ContainerField>
-                <Field name="mensaje" as="textarea" placeholder="mensaje" id="mensaje"/>
+                <Field name="mensaje" as="textarea" placeholder="¡Hola, me interesa comprar!" id="mensaje"/>
               </ContainerField>
 
               <button type="submit">Enviar</button>
