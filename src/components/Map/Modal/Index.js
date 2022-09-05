@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useCallback, Component } from "react";
+import React, { useRef, useEffect, useCallback } from "react";
 import { useSpring, animated } from "react-spring";
 import Departament from "../../../utilities/Departament";
 import {
@@ -10,8 +10,7 @@ import {
   ContentContainer,
 } from "./ModalElements";
 
-
-export const Modal = ({ showModal, setShowModal, props }) => {
+export const Modal = ({ showModal, setShowModal}) => {
   const modalRef = useRef();
 
   const animation = useSpring({
@@ -54,7 +53,7 @@ export const Modal = ({ showModal, setShowModal, props }) => {
         }
       }
     }
-    //console.log(Shops);
+   //console.log(Shops);
   }
   //console.log(Departament.stores);
 
@@ -66,14 +65,15 @@ export const Modal = ({ showModal, setShowModal, props }) => {
             <ModalWrapper showModal={showModal}>
               {Products()}
               {Shops.map((e) => (
-                <ModalContent>
+                <ModalContent key={e.ID}>
                   <ModalImg
-                    src={e["Foto_Establecimiento"]}
+                    src={e.img}
                     alt="camera"
                   />
                   <ContentContainer>
-                    <h1>{e["Nombre_Comercial"]}</h1>
-                    <p>{e["Direccion"]}</p>
+                    <h1>{e.Nombre_Comercial}</h1>
+                    <p>{e.Direccion}</p>
+
                   </ContentContainer>
                 </ModalContent>
               ))}

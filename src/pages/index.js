@@ -46,7 +46,7 @@ const Home = () => {
       </div>
       <div title="Form" subtitle={"dummyText"} id="Form">
         <Formulario />
-      </div>
+      </div> 
       <Footer />
     </>
   );

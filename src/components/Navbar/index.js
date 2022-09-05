@@ -21,7 +21,9 @@ const Navbar = ({ toggle, Users }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">
+          <NavLogo 
+                to="H/"
+                >
             <img src={require("../../images/Logo_2.png")} alt="" />
           </NavLogo>
           <MobileIcons onClick={toggle}>

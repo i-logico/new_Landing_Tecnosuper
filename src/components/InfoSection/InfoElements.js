@@ -3,7 +3,6 @@ import grandfhater from "../../images/grandfhater.png";
 import women1 from "../../images/women.png";
 import women2 from "../../images/women2.png";
 import EquipmentImage from "../../images/Equipment.png";
-import Font from '../../images/Desktop1.png'
 
 export const InfoContainer = styled.div`
   display: flex;
