@@ -12,10 +12,11 @@ import {
   ContainerMap,
   ContainerMaps,
 } from "./MapElements";
-import axios from "axios";
 
 const Map = () => {
   const [showModal, setShowModal] = useState(false);
+
+  //traemos los id's de los departamentos para hacer la respectiva comparación
   const openModal = ({ target }) => {
     const ids = [
       "co-ama",
@@ -34,6 +35,8 @@ const Map = () => {
 
     Departament.name = target.attributes.name.value;
     const id = target.attributes.id.value;
+
+    //si los id's no coinciden con el array id's entonces no tiene acciones
     ids.forEach((e) => {
       if (e === id) {
         setShowModal((prev) => !prev);

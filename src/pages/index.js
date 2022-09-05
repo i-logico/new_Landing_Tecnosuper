@@ -10,6 +10,8 @@ import Footer from "../components/Footer";
 import axios from "axios";
 import Departament from "../utilities/Departament";
 
+//Home 
+
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,6 +19,7 @@ const Home = () => {
     setIsOpen(!isOpen);
   };
 
+  //función para traer información de las tiendas del zoho
   async function getStores() {
     let shops =  await axios.get('http://localhost:3000/tienda')
     return shops.data

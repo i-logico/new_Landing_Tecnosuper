@@ -8,9 +8,9 @@ const HeroSection = () => {
       <HeroBg/>
       <HeroContent> 
         <HeroContentText>
-          <HeroH1>¡Estar reportado tiene beneficios, con nosotros!</HeroH1>
+          <HeroH1>¡Crédito a reportados!</HeroH1>
           <HeroP>
-            Sí, de esta manera
+            ¡Sí, de esta manera!
           </HeroP>
         </HeroContentText>
         <HeroContentImage>
