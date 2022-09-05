@@ -9,9 +9,6 @@ import {
   CloseModalButton,
   ContentContainer,
 } from "./ModalElements";
-import Carousel from "better-react-carousel";
-import axios from "axios";
-import { render } from "@testing-library/react";
 
 export const Modal = ({ showModal, setShowModal, props }) => {
   const modalRef = useRef();
