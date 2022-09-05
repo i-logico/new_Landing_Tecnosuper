@@ -45,17 +45,6 @@ export const Modal = ({ showModal, setShowModal, props }) => {
     return () => document.removeEventListener("keydown", keyPress);
   }, [keyPress]);
 
-  const MyDot = ({ isActive }) => {
-    <span
-      style={{
-        display: "inline-block",
-        height: isActive ? "8px" : "5px",
-        width: isActive ? "8px" : "5px",
-        background: "#1890ff",
-        margin: "0px 20px",
-      }}
-    ></span>;
-  };
   let Shops = [];
   function Products() {
     for (let i = 0; i < Departament.stores.length; i++) {
@@ -67,19 +56,9 @@ export const Modal = ({ showModal, setShowModal, props }) => {
         }
       }
     }
+
     console.log(Shops);
   }
-
-  let Tecnosuper = [
-    {
-      name: "Hola",
-      lugar: "sapo",
-    },
-    {
-      name: "Dos",
-      lugar: "jaja",
-    },
-  ];
 
   //console.log(Departament.stores);
 
@@ -89,32 +68,20 @@ export const Modal = ({ showModal, setShowModal, props }) => {
         <Background onClick={closeModal} ref={modalRef}>
           <animated.div style={animation}>
             <ModalWrapper showModal={showModal}>
-              <Carousel
-                cols={3}
-                rows={1}
-                gap={1}
-                loop
-                scrollSnap={true}
-                className="Carousel"
-                dot={MyDot}
-              >
-                {Products()}
-                {Shops.map((tecnos) => {
-                  <Carousel.Item>
-                    <ModalContent>
-                      <ModalImg
-                        src={require("../../../images/women.png")}
-                        alt="camera"
-                      />
-                      <ContentContainer>
-                        <h1>{Departament.name}</h1>
-                        <p>{tecnos.name}</p>
-                        <a href="#"> 📍 visita en google maps</a>
-                      </ContentContainer>
-                    </ModalContent>
-                  </Carousel.Item>;
-                })}
-              </Carousel>
+              {Products()}
+              {Shops.map((e) => (
+                <ModalContent key={e.ID}>
+                  <ModalImg
+                    src={e.img}
+                    alt="camera"
+                  />
+                  <ContentContainer>
+                    <h1>{e.Nombre_Comercial}</h1>
+                    <p>{e.Direccion}</p>
+                  </ContentContainer>
+                </ModalContent>
+              ))}
+              ;
               <CloseModalButton
                 aria-label="Close modal"
                 onClick={() => setShowModal((prev) => !prev)}
