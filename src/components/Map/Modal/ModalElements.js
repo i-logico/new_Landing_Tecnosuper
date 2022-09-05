@@ -28,9 +28,8 @@ export const ModalWrapper = styled.div`
   border-radius: 20px;
   justify-content: center;
   text-align: center;
-  overflow-y: scroll;   
-
-
+  
+  
   @media screen and (max-width: 1024px) {
     width: 588px;
     height: 1052px;
@@ -38,6 +37,7 @@ export const ModalWrapper = styled.div`
   }
   
   @media screen and (max-width: 420px) {
+    overflow-y: scroll;   
     width: 350px;
     height: 627px;
     overflow-y: scroll;

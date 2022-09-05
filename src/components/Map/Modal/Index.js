@@ -55,7 +55,7 @@ export const Modal = ({ showModal, setShowModal}) => {
     }
    //console.log(Shops);
   }
-  //console.log(Departament.stores);
+  console.log(Departament.stores);
 
   return (
     <>

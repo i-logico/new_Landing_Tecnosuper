@@ -21,7 +21,7 @@ const Home = () => {
 
   //función para traer información de las tiendas del zoho
   async function getStores() {
-    let shops =  await axios.get('http://localhost:3000/tienda')
+    let shops =  await axios.get('https://stormy-chamber-42652.herokuapp.com/tienda')
     return shops.data
   }
 

@@ -22,7 +22,7 @@ const Footer = () => {
         </IconContainer>
       </FooterContainer>
       <ButtonWpp>
-        <a  href="https://web.whatsapp.com/send?phone=573007595628&text=Hola! Me gustaría saber...">
+        <a  href="https://web.whatsapp.com/send?phone=573207561345&text=Hola! Quiero información de sus productos">
           <img src={WppImage} alt="" />
         </a>
       </ButtonWpp>
